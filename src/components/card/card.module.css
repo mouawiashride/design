@@ -1,0 +1,212 @@
+.cardparent {
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    border-radius: 60px;
+}
+
+.cardimg {
+    width: 100%;
+    object-fit: contain;
+
+}
+
+
+
+
+
+
+/* cards style */
+.mycard {
+    border: none !important;
+    padding: 8px;
+}
+
+.secondarytitle
+{
+    font-size: 20px;
+    color: var(--graycolor);
+}
+.description
+{
+   color: var(--graycolor)
+}
+
+.mercedestitle,
+.h2htitle {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+/* h2h styles */
+.h2htitle {
+    color: var(--purpletow) !important;
+}
+
+/* mercedes title */
+.mercedestitle {
+    color: var(--purpleone);
+}
+
+.price {
+    background-color: var(--purpleone);
+    width: max-content !important;
+    position: absolute;
+    padding: 3px 20px !important;
+    left: -20px;
+    z-index: 3;
+    color: var(--whitecolor);
+    font-size: 30px;
+}
+
+.price::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 20px 20px 0;
+    border-color: transparent var(--purpletow) transparent transparent;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+
+
+
+/* container right icons internal */
+.rightinternalicons{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+   right: 20px;
+    top: 50%;
+    width: fit-content !important;
+}
+.hearticon,.shoppingcarticon
+{
+    margin: 10px 0;
+font-size: 40px;
+padding: 5px;
+border-radius: 10px;
+color: var(--whitecolor);
+}
+.hearticon
+{
+background-color: var(--purpletow);
+}
+.shoppingcarticon
+{
+    background-color:var(--purpleone);
+}
+
+
+
+/*  external right icons internal  */
+.rightexternalicons
+{
+    position: absolute;
+    top: 50%;
+    transform: translate(+0%,-50%);
+    width: 200px !important;
+    height: 50%;
+    background: var(--purpletow);
+    border-radius: 50px 50% 50% 50px / 25px 50% 50% 25px;
+    right: -50px;
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.plusicon , .counter ,.minusicon 
+{
+    border-radius: 50%;
+    text-align: center;
+}
+.plusicon 
+{
+background-color:var(--purpleone);
+color: var(--whitecolor);
+padding: 3px;
+font-size: 40px;
+}
+.counter
+{
+    color: white;
+    transform: translate(-100%);
+    font-size: 20px;
+}
+.minusicon 
+{
+    background-color:var(--purpleone);
+    color: var(--whitecolor);
+padding: 3px;
+font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .maincontainer
+    {
+        width: 70% !important;
+    }
+    .price {
+        z-index: 10;
+        font-size: 1.4rem;
+    }
+
+    .cardimg {
+        height: 200px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+ 
+    .maincontainer
+    {
+        width: 80% !important;
+    }
+    .circular-chart {
+        width: 240px;
+        height: 240px;
+    }
+
+    .cardimg {
+        height: 300px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+   
+    
+    .circular-chart {
+        width: 270px;
+        height: 270px;
+    }
+    .cardimg {
+        height: 400px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+   
+    .circular-chart {
+        width: 300px;
+        height: 300px;
+    }
+    .cardimg {
+        height: 500px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .circular-chart {
+        width: 330px;
+        height: 330px;
+    }
+}

@@ -1,0 +1,121 @@
+
+
+
+
+
+
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    z-index: 7;
+    left: 50%;
+    top: 0;
+  
+    padding: 0px !important;
+    transform: translate(-50%,-50%);
+  }
+  
+  .single-chart {
+    width: 100%;
+    height: 100%;
+    justify-content: space-around ;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 0 auto;
+    
+    /* max-width: 80%; */
+    /* max-height: 250px; */
+    background-color: var(--whitecolor);
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #e1cde9;
+    stroke-width: 1.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: var(--purpleone);
+  }
+  
+ 
+  
+
+  
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }
+
+
+
+
+
+
+  /* Extra small devices (phones, 600px and down) */
+@media  screen and (max-width: 600px) {
+  .circular-chart {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media  screen and (min-width: 600px) {
+  .circular-chart {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media  screen and (min-width: 768px) {
+  .circular-chart {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media  screen and (min-width: 992px) {
+  .circular-chart {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media  screen and (min-width: 1200px) {
+  .circular-chart {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+
+
+
+
+
+
+
+

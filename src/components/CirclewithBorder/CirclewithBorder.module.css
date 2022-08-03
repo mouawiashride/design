@@ -1,0 +1,168 @@
+.submaincicle {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    /* width: 80% !important;
+    height: 80% !important; */
+    position: absolute;
+    z-index: 9;
+    box-shadow: -5px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: -5px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -5px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.price,
+.thirdtitle,
+.lasttitle,
+.secondtitle {
+    margin: 0px !important;
+}
+
+.price {
+    color: #660099;
+}
+
+.thirdtitle,
+.lasttitle {
+    color: rgba(0, 0, 0, 0.384);
+}
+
+
+.containerabsolute
+{
+    position: absolute;
+    top:75%;
+    left: 75%;
+    transform-origin: 50% 100%;
+    transform: rotateZ(-45deg);
+    width: 120px;
+}
+
+.containerwinthis
+{
+    position: relative;
+}
+.winprize {
+    width: fit-content;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 10px 0px;
+}
+
+.shapestyle
+{
+width: 100%;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .submaincicle {
+
+        width: 90px;
+        height: 90px;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+    .secondtitle {
+     font-size: 1rem;
+    }
+    .thirdtitle {
+    font-size: 0.9rem;
+    }
+    .lasttitle {
+   font-size: 0.8rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
+    .submaincicle {
+
+        width: 150px;
+        height: 150px;
+    }
+   
+    .containerabsolute
+    {
+        width: fit-content;
+    }
+    .price {
+        font-size: 2rem;
+    }
+    .secondtitle {
+        font-size: 1.5rem;
+       }
+       .thirdtitle {
+       font-size: 1.2rem;
+       }
+       .lasttitle {
+      font-size: 1.1rem;
+       }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    .submaincicle {
+        width: 180px;
+        height: 180px;
+    }
+    .containerabsolute
+    {
+        width: 170px;
+    }
+
+    .price {
+        /* font-size: 40px; */
+        font-size: 3rem;
+    }
+    .secondtitle {
+        font-size: 1.8rem;
+       }
+       .thirdtitle {
+       font-size: 1.3rem;
+       }
+       .lasttitle {
+      font-size: 1.1rem;
+       }
+}
+
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    .submaincicle {
+
+        width: 210px;
+        height: 210px;
+    }
+
+    .containerabsolute
+    {
+        width: 190px;
+    }
+    .price {
+        /* font-size: 50px; */
+        font-size: 4rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .submaincicle {
+        width: 230px;
+        height: 230px;
+    }
+
+}
