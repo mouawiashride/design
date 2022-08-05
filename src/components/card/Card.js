@@ -14,10 +14,15 @@ const [counter,setcounter]=useState(1);
             <div className={`row p-0 shadow position-relative  ${styles.cardparent}`}>
 
                 <div className={styles.rightexternalicons}>
+                </div>
+                <div className={styles.rightexternaliconsfront}>
                     <AiOutlinePlusCircle className={styles.plusicon} onClick={()=>setcounter(prev=>prev+1)} />
                     <label className={styles.counter}>{counter}</label>
                     <AiOutlineMinusCircle className={styles.minusicon} onClick={()=>setcounter(prev=>prev-1)} />
+
                 </div>
+
+
                 <CirclewithBorder />
 
 
